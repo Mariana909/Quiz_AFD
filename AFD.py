@@ -65,7 +65,15 @@ def afd(entrada):
         else:
             q = 'q6'
             break
-
+    if q == 'q1':
+        print("SUMA")
+    elif q == 'q2':
+        print("INCR")
+    elif q in ['q3','q4','q5']:
+        print("ID")
+    else:
+        print("NO ACEPTA")
+        
 try:
     if len(sys.argv) > 1:
         entrada = sys.argv[1]
